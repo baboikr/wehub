@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta http-equiv="Cache-Control" content="No-Cache">
+<meta http-equiv="Pragma" content="No-Cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="format-detection" content="telephone=no">
+<!-- The Open Graph protocol -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<!-- //The Open Graph protocol -->
+<link rel="SHORTCUT ICON" href="../img/favicon.ico">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/content.css">
+<script type="text/javascript" src="../js/1.10.2.jquery.min.js"></script>
+<script type="text/javascript" src="../js/publishing.ui.library.3.0.1.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+
+<body>
+					<div>
+						<div class="content_body_inn resetOverflow">
+							<div class="displayGridTwoRow">
+								<div class="prod_wrap">
+									<div class="prod_list_boxType">
+										List...
+									</div>
+									<div class="prod_toggle_grp">
+										<a href="#none" class="bt_Toggle js_click1 on"><span class="blind">펼치기</span></a>
+										<a href="#none" class="bt_Toggle js_click1 off"><span class="blind">접기</span></a>
+									</div>
+								</div>
+
+								<hr>
+
+								<div class="displayGrid2">
+									<div class="left_col" style="display:none;">
+										<div class="col_inn">
+											<div class="sidebar_grp">
+												<!-- 사이드바 컨트롤 -->
+												<div class="inSidebar">
+													<a href="#none" class="bt_inSidebar hidden"><span class="blind">필터 종료</span></a>
+												</div>
+												<!-- //사이드바 컨트롤 -->
+												<div class="filter_head">
+													<div class="left">
+														<div class="tit_wrap">
+															<h4 class="tit_h4">필터</h4>
+														</div>
+													</div>
+													<div class="right">
+														<a href="#none" class="bt_wg24 ic_refresh"><span>초기화</span></a>
+													</div>
+												</div>
+												<div class="filter_body fbTypeFixed"><!-- add class fbType0, fbType1, ... -->
+													<div class="block_grp">
+														<dl>
+															<dt>
+																<p>조회날짜</p>
+															</dt>
+															<dd>
+																<div class="twinDateIpt_control">
+																	<div class="twinDate d_block">
+																		<div class="frm_control mgb6">
+																			<div class="frm_grp">
+																				<label for="">시작일</label>
+																				<input type="text" id="" placeholder="yyyy-mm-dd" value="2023-02-15">
+																			</div>
+																			<a href="#none" class="bt_calendar"><span class="blind">calendar</span></a>
+																		</div>
+																		<div class="frm_control">
+																			<div class="frm_grp">
+																				<label for="">종료일</label>
+																				<input type="text" id="" placeholder="yyyy-mm-dd" value="2023-02-15">
+																			</div>
+																			<a href="#none" class="bt_calendar"><span class="blind">calendar</span></a>
+																		</div>
+																	</div>
+																</div>
+															</dd>
+														</dl>
+													</div>
+													<div class="block_grp">
+														<dl>
+															<dt>
+																<p>설정</p>
+															</dt>
+															<dd>
+																<div class="bx_setting">
+																	<div class="detail_switch">
+																		<label>
+																			<input type="checkbox" id="" checked=""><span class="slider round"></span>
+																		</label>
+																		<span class="tx_switch">해지계좌 포함</span>
+																	</div>
+																</div>
+															</dd>
+														</dl>
+													</div>
+													<div class="block_grp">
+														<dl>
+															<dt>
+																<p>보기설정</p>
+															</dt>
+															<dd>
+																<div class="chkBox_list block">
+																	<ul>
+																		<li>
+																			<div class="chkBx_control blockRow">
+																				<label for="">
+																					<input type="checkbox" id="" checked=""><i></i>
+																					<span>회사명</span>
+																				</label>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="chkBx_control blockRow">
+																				<label for="">
+																					<input type="checkbox" id="" checked=""><i></i>
+																					<span>금융기관</span>
+																				</label>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="chkBx_control blockRow">
+																				<label for="">
+																					<input type="checkbox" id=""><i></i>
+																					<span>종목</span>
+																				</label>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="chkBx_control blockRow">
+																				<label for="">
+																					<input type="checkbox" id="" checked=""><i></i>
+																					<span>계좌번호</span>
+																				</label>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="chkBx_control blockRow">
+																				<label for="">
+																					<input type="checkbox" id="" checked=""><i></i>
+																					<span>계좌별칭</span>
+																				</label>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="chkBx_control blockRow">
+																				<label for="">
+																					<input type="checkbox" id="" checked=""><i></i>
+																					<span>현재잔액</span>
+																				</label>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="chkBx_control blockRow">
+																				<label for="">
+																					<input type="checkbox" id="" checked=""><i></i>
+																					<span>인출가능잔액</span>
+																				</label>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="chkBx_control blockRow">
+																				<label for="">
+																					<input type="checkbox" id="" checked=""><i></i>
+																					<span>잔액상태</span>
+																				</label>
+																			</div>
+																		</li>
+																		<li>
+																			<div class="chkBx_control blockRow">
+																				<label for="">
+																					<input type="checkbox" id="" checked=""><i></i>
+																					<span>최종잔액조회일시</span>
+																				</label>
+																			</div>
+																		</li>
+																	</ul>
+																</div>
+															</dd>
+														</dl>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="right_col">
+										<div class="tbl_meta_grp">
+											<div class="tbl_meta">
+												<div class="left">
+													<div class="cntalign">
+														<div class="page_tit">
+															<h2>수시입출(원화)</h2>
+														</div>
+													</div>
+												</div>
+												<div class="right">
+													<div class="cntalign">
+														<a href="#none" class="bt_tranp24 ic_filter"><span>필터</span></a>
+													</div>
+													<div class="cntalign">
+														<a href="#none" class="bt_b32">최신정보조회</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<hr>
+
+										<div>
+											<div class="col_inn">
+												<div class="tabs_wrap">
+													<div class="tabs_header">
+														<ul>
+															<li><a href="#none"><span>계좌정보</span></a></li>
+															<li class="on"><a href="#none"><span>거래내역</span></a></li>
+														</ul>
+													</div>
+													<div class="tabs_body">
+														<!-- 계좌정보 -->
+														<div class="tabs_cnt" style="display:none;">
+															계좌정보...
+														</div>
+														<!-- //계좌정보 -->
+
+														<!-- 거래내역 -->
+														<div class="tabs_cnt" style="display:bolck;">
+															<div>
+																<div class="srch_control">
+																	<label for="">
+																		<input type="text" id="" value="" placeholder="회사명, 금융기관, 계좌번호, 계좌별칭">
+																	</label>
+																</div>
+															</div>
+															<div>
+																<div class="tbl_list_wrap">
+																	<div class="tbl_list tblHeader">
+																		<table summary="">
+																			<caption></caption>
+																			<colgroup>
+																			<col style="width:177px;">
+																			<col style="width:130px;">
+																			<col>
+																			<col>
+																			<col>
+																			<col>
+																			<col>
+																			</colgroup>
+																			<thead>
+																				<tr>
+																					<th scope="col"><div><span>회사명</span></div></th>
+																					<th scope="col"><div><span>금융기관</span></div></th>
+																					<th scope="col"><div><span>종목</span></div></th>
+																					<th scope="col"><div><span>계좌번호</span></div></th>
+																					<th scope="col"><div><span>계좌별칭</span></div></th>
+																					<th scope="col"><div class="tar"><span>예수금</span></div></th>
+																					<th scope="col"><div class="tar"><span>평가액</span></div></th>
+																				</tr>
+																			</thead>
+																		</table>
+																	</div>
+																	<div class="tbl_list tblBody scroll_body sbTypeFixed"><!-- add class sbType0 no scroll -->
+																		<table summary="">
+																			<caption></caption>
+																			<colgroup>
+																			<col style="width:177px;">
+																			<col style="width:130px;">
+																			<col>
+																			<col>
+																			<col>
+																			<col>
+																			<col>
+																			</colgroup>
+																			<tfoot style="display:none;">
+																				<tr>
+																					<td colspan="7">
+																						<div class="no_infor">
+																							<p>내용이 존재하지 않습니다.</p>
+																						</div>
+																					</td>
+																				</tr>
+																			</tfoot>
+																			<tbody>
+																				<tr>
+																					<td><div class="tx_ellipsis_nm mw95per"><span>웹케시웹케시웹케시</span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span>유안타</span></div></td>
+																					<td><div><span>투신</span></div></td>
+																					<td><div><span><a href="#none" class="tbl_txLink">214-86-35111</a></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span>국민 수납통장</span></div></td>
+																					<td><div class="tar"><span>0</span></div></td>
+																					<td><div class="tar"><span>20,100,000</span></div></td>
+																				</tr>
+																				<tr>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																				</tr>
+																				<tr>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																				</tr>
+																				<tr>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																				</tr>
+																				<tr>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																				</tr>
+																				<tr>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																				</tr>
+																				<tr>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																				</tr>
+																				<tr>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																				</tr>
+																				<tr>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																				</tr>
+																				<tr>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div><span></span></div></td>
+																					<td><div class="tx_ellipsis_nm mw95per"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																					<td><div class="tar"><span></span></div></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</div>
+																	<div class="tbl_list_footer js_wrap">
+																		<div class="paging_wrap">
+																			<div class="left">
+																				<span>Rows per page:</span>
+																				<div>
+																					<a href="#none" class="bt_pagNum js_click">10</a>
+																					<div class="dowp_page js_show"><!-- up => start at top of input -->
+																						<ul>
+																							<li><a href="#none"><span>10</span></a></li>
+																							<li><a href="#none"><span>20</span></a></li>
+																							<li><a href="#none"><span>30</span></a></li>
+																							<li><a href="#none"><span>40</span></a></li>
+																							<li><a href="#none"><span>50</span></a></li>
+																						</ul>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="right">
+																				<span id="">1-10</span>
+																				of
+																				<span id="">100</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- //거래내역 -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<hr>
+
+							<!-- 최신정보조회 -->
+							<div class="inPage_pop_wrap flexDisplay" style="display:block;">
+								<div class="inPage_pop_inn">
+									<div class="inPage_pop_header">
+										<h4>최신정보조회</h4>
+										<a href="#none" class="bt_inPageClose"><span class="blind">팝업닫기</span></a>
+									</div>
+									<hr>
+									<div class="inPage_pop_container popScroll">
+										<div class="tbl_row">
+											<div class="tbl_cell">
+												<dl>
+													<dt>
+														<p>조회유형<em class="point"></em></p>
+													</dt>
+													<dd>
+														<div class="combo_control js_wrap">
+															<a href="#none" class="bt_toggle js_click">잔액 + 거래내역조회</a>
+															<div class="combo_ly js_show" style="display:none;"><!-- up => start at top of input -->
+																<ul>
+																	<li class="on"><a href="#none"><span>잔액 + 거래내역조회</span></a></li>
+																	<li><a href="#none"><span>가나다라마</span></a></li>
+																</ul>
+															</div>
+														</div>
+													</dd>
+												</dl>
+											</div>
+											<div class="tbl_cell">
+												<dl>
+													<dt>
+														<p>조회기간<em class="point"></em></p>
+													</dt>
+													<dd>
+														<div class="combo_control js_wrap">
+															<a href="#none" class="bt_toggle js_click">당일</a>
+															<div class="combo_ly js_show" style="display:none;"><!-- up => start at top of input -->
+																<ul>
+																	<li class="on"><a href="#none"><span>당일</span></a></li>
+																	<li><a href="#none"><span>가나다라마</span></a></li>
+																</ul>
+															</div>
+														</div>
+													</dd>
+												</dl>
+												<dl>
+													<dt>
+														<p></p>
+													</dt>
+													<dd>
+														<div class="twinDate">
+															<div class="frm_control">
+																<div class="frm_grp">
+																	<label for="">시작일</label>
+																	<input type="text" id="" placeholder="yyyy-mm-dd" value="2024-05-31">
+																</div>
+																<a href="#none" class="bt_calendar"><span class="blind">calendar</span></a>
+															</div>
+															<span class="dash">~</span>
+															<div class="frm_control">
+																<div class="frm_grp">
+																	<label for="">종료일</label>
+																	<input type="text" id="" placeholder="yyyy-mm-dd" value="2024-05-31">
+																</div>
+																<a href="#none" class="bt_calendar"><span class="blind">calendar</span></a>
+															</div>
+														</div>
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+									<hr>
+									<div class="inPage_pop_footer">
+										<div class="bt_wrap">
+											<a href="#none" class="bt_b42"><span>조회</span></a><!-- class="disabled"-->
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //최신정보조회 -->
+						</div>
+					</div>
+</body>
+</html>
