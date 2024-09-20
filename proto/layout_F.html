@@ -20,29 +20,30 @@
 <link rel="stylesheet" href="../css/reset.css">
 <link rel="stylesheet" href="../css/content.css">
 <script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
 </head>	
 	<body>
 		<div class="wrap">
 			<!--main layout-->
             <div class="main_layout">
                 <!--left navigation-->
-                <div class="nav_left">
+                <div class="nav_left"><!--add class 'short' to collapse nav_left-->
                     <!--nav head-->
                     <div class="nav_head">
                         <h1 class="logo"><a href="#none"><span class="blind">Wehub</span></a></h1>
                         <span class="label">Administrator</span>
-                        <span class="label_short">Admin</span>
+                        <span class="label short">Admin</span>
                         <a href="#none" class="nav_switcher"><span class="blind">switch</span></a>
                     </div>
                     <!--//nav head-->
 
                     <!--nav menu-->
                     <div class="nav_menu">
-                        <h2 class="home"><a href="#none">Home</a></h2>
+                        <h2 class="home"><a href="#none"><span>Home</span></a></h2>
                         <div class="setting">
                             <strong>SETTING</strong>
                             <dl class="mgt5">
-                                <dt class="user_setting"><a href="#none">사용자</a></dt>
+                                <dt class="user_setting"><a href="#none"><span>사용자</span></a></dt>
                                     <dd><a href="#none">회사정보</a></dd>
                                     <dd class="on"><a href="#none">인증서관리</a></dd>
                                     <dd><a href="#none">계좌원장관리</a></dd>
@@ -52,7 +53,7 @@
                                     <dd><a href="#none">이용료 현황</a></dd>
                             </dl>
                             <dl class="mgt3">
-                                <dt class="system_setting"><a href="#none">시스템 설정</a></dt>
+                                <dt class="system_setting"><a href="#none"><span>시스템 설정</span></a></dt>
                                     <dd><a href="#none">펌뱅킹정보관리</a></dd>
                                     <dd><a href="#none">시스템코드 관리</a></dd>
                                     <dd><a href="#none">이용료 관리</a></dd>
@@ -83,7 +84,7 @@
                                 <li>
                                     <div class="lang"><!--toggle class 'on' to toggle languages list-->
                                         <a href="#none"><img src="../img/comm/flag_korea.png" alt=""><span>한국어</span></a>
-                                        <ul>
+                                        <ul style="display: none;">
                                             <li><a href="#none"><img src="../img/comm/flag_korea.png" alt=""><span>한국어</span></a></li>
                                             <li><a href="#none"><img src="../img/comm/flag_usa.png" alt=""><span>English</span></a></li>
                                             <li><a href="#none"><img src="../img/comm/flag_vn.png" alt=""><span>Tiếng Việt</span></a></li>
@@ -93,22 +94,26 @@
                                 <li>
                                     <div class="notification">
                                         <a href="#none"><span class="blind">Notification</span><em>+99</em></a>
-                                        <div class="notification_box">
+                                        <div class="notification_box" style="display: none;"><!-- toggle display to toggle the nitification_box -->
                                             <div class="head"><h3>알림</h3><a href="#none" class="close"><span class="blind">close</span></a></div>
-                                            <div class="filter_tab">
+                                            <div class="filter_tab mgt17">
                                                 <div class="filter_tab_head">
                                                     <ul>
-                                                        <li><a href="#none">미확인</a></li>
+                                                        <li class="on"><a href="#none">미확인</a></li>
                                                         <li><a href="#none">전체</a></li>
                                                     </ul>
                                                     <a href="#none" class="read_all">모두 읽음</a>
                                                 </div>
                                                 <ul class="notification_list">
-                                                    <li><a href="#none">금융기관 개시 상태 확인 요청<span>YYYY-MM-DD hh:mm</span></a></li>
-                                                    <li><a href="#none">스케쥴 확인 요청<span>YYYY-MM-DD hh:mm</span></a></li>
-                                                    <li><a href="#none">금융기관 스케쥴 확인 요청<span>YYYY-MM-DD hh:mm</span></a></li>
-                                                    <li><a href="#none">금융기관 스케쥴 확인 요청<span>YYYY-MM-DD hh:mm</span></a></li>
-                                                    <li><a href="#none">금융기관 스케쥴 확인 요청<span>YYYY-MM-DD hh:mm</span></a></li>
+                                                    <li class="unread"><a href="#none"><span>금융기관 개시 상태 확인 요청</span><span class="date">YYYY-MM-DD hh:mm</span></a></li>
+                                                    <li><a href="#none"><span>스케쥴 확인 요청</span><span class="date">YYYY-MM-DD hh:mm</span></a></li>
+                                                    <li><a href="#none"><span>금융기관 스케쥴 확인 요청</span><span class="date">YYYY-MM-DD hh:mm</span></a></li>
+                                                    <li class="unread"><a href="#none"><span>금융기관 스케쥴 확인 요청</span><span class="date">YYYY-MM-DD hh:mm</span></a></li>
+                                                    <li class="unread"><a href="#none"><span>금융기관 스케쥴 확인 요청</span><span class="date">YYYY-MM-DD hh:mm</span></a></li>
+                                                    <li class="unread"><a href="#none"><span>금융기관 스케쥴 확인 요청</span><span class="date">YYYY-MM-DD hh:mm</span></a></li>
+                                                    <li class="unread"><a href="#none"><span>금융기관 스케쥴 확인 요청</span><span class="date">YYYY-MM-DD hh:mm</span></a></li>
+                                                    <li class="unread"><a href="#none"><span>금융기관 스케쥴 확인 요청</span><span class="date">YYYY-MM-DD hh:mm</span></a></li>
+                                                    <li class="unread"><a href="#none"><span>금융기관 스케쥴 확인 요청</span><span class="date">YYYY-MM-DD hh:mm</span></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -118,10 +123,12 @@
                                     <a href="#none" class="download"><span class="blind">download</span></a>
                                 </li>
                                 <li>
-                                    <div class="profile"  style="display: none;">
+                                    <div class="profile">
                                         <div class="profile_pic"><img src="" alt=""></div>
-                                        <strong>홍길동</strong>
-                                        <span>웹케시 / IHB사업부</span>
+                                        <div class="profile_info">
+                                            <strong>홍길동</strong>
+                                            <span>웹케시 / IHB사업부</span>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
