@@ -23,19 +23,214 @@
 <script type="text/javascript" src="../js/common.js"></script>
 </head>	
 	<body>
-        <div class="widget_wrap">
+        <div class="content">
             <!--title-->
             <div class="tit_wrap">
                 <h3 class="tit_h3">펌뱅킹정보관리</h3>
                 <div class="right">
-                    <a href="#none" class="btn_filter">필터</a>
-                    <a href="#none" class="btn_blue_ico">등록</a>
+                    <a href="#none" class="btn_blue_s"><img src="../img/ico/ico_edit.png" alt="">위젯설정</a>
                 </div>
             </div>
             <!--//title-->
 
-            <!--widget card-->            
-            <!--//widget card-->            
+            <!--widget card-->
+            <div class="widget_wrap">
+                <div class="card">
+                    <div class="card_head"><strong class="card_tit">금융자산현황</strong></div>
+                    <div class="card_body">
+                        <ul class="financial_asset_list">
+                            <li>
+                                <div class="asset">
+                                    <div class="asset_name">
+                                        <strong>
+                                            수시입출(원화)입니다<br>
+                                            두줄일 경우
+                                        </strong>
+                                        <span>12</span>
+                                    </div>
+                                    <div class="balance">
+                                        <strong>전체잔액</strong>
+                                        <p><span class="currency"></span>KRW<span class="amount">10,234,567,890</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="asset">
+                                    <div class="asset_name">
+                                        <strong>수시입출(외화)</strong>
+                                        <span>12</span>
+                                    </div>
+                                    <div class="balance">
+                                        <strong>전체잔액</strong>
+                                        <p><span class="currency"></span>USD<span class="amount">10,234,567,890</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="asset">
+                                    <div class="asset_name">
+                                        <strong class="">예적금</strong>
+                                        <span>6</span>
+                                    </div>
+                                    <div class="balance">
+                                        <strong>전체잔액</strong>
+                                        <p><span class="currency"></span>KRW<span class="amount">5,000,000,000</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="asset">
+                                    <div class="asset_name">
+                                        <strong>증권 </strong>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="balance">
+                                        <strong>전체잔액</strong>
+                                        <p><span class="currency"></span>KRW<span class="amount">3,000,000</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card_foot"><a href="#none" class="shortcut">바로가기</a></div>
+                </div>
+                <div class="card">
+                    <div class="card_head"><strong class="card_tit">스케줄 실행 상태</strong></div>
+                    <div class="card_body">
+                        <div class="state error">
+                            <strong></strong>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card_foot"><a href="#none" class="shortcut">바로가기</a></div>
+                </div>
+                <div class="card">
+                    <div class="card_head"><strong class="card_tit">금융기관 개시 상태</strong></div>
+                    <div class="card_body">
+                        <div class="state normal"></div>
+                            <strong></strong>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card_foot"><a href="#none" class="shortcut">바로가기</a></div>
+                </div>
+                <div class="card">
+                    <div class="card_head">
+                        <strong class="card_tit">데이터 수집 현황</strong>
+                        <div class="btn_twin"><a href="#none">일별</a> <a href="#none">월별</a> </div>
+                    </div>
+                    <div class="card_body">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--//widget card-->
         </div>
+        <!--popup-->
+        <div class="popup_wrap">
+            <div class="modal">
+                <div class="modal_head"><strong>위젯 설정</strong><a href="none" class="pop_close"><span class="blind">close</span></a></div>
+                <div class="modal_cnt">
+                     <!--widget card-->
+                    <div class="widget_wrap">
+                        <div class="card">
+                            <div class="card_head"><input type="checkbox"><strong class="card_tit">금융자산현황</strong></div>
+                            <div class="card_body">
+                                <ul class="financial_asset_list">
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong>
+                                                    수시입출(원화)입니다<br>
+                                                    두줄일 경우
+                                                </strong>
+                                                <span>12</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency"></span>KRW<span class="amount">10,234,567,890</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong>수시입출(외화)</strong>
+                                                <span>12</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency"></span>USD<span class="amount">10,234,567,890</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong class="">예적금</strong>
+                                                <span>6</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency"></span>KRW<span class="amount">5,000,000,000</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong>증권 </strong>
+                                                <span>2</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency"></span>KRW<span class="amount">3,000,000</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card_foot"><a href="#none" class="shortcut">바로가기</a></div>
+                        </div>
+                        <div class="card">
+                            <div class="card_head"><input type="checkbox"><strong class="card_tit">스케줄 실행 상태</strong></div>
+                            <div class="card_body">
+                                <div class="state error">
+                                    <strong></strong>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="card_foot"><a href="#none" class="shortcut">바로가기</a></div>
+                        </div>
+                        <div class="card">
+                            <div class="card_head"><input type="checkbox"><strong class="card_tit">금융기관 개시 상태</strong></div>
+                            <div class="card_body">
+                                <div class="state normal"></div>
+                                    <strong></strong>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="card_foot"><a href="#none" class="shortcut">바로가기</a></div>
+                        </div>
+                        <div class="card">
+                            <div class="card_head">
+                                <input type="checkbox">
+                                <strong class="card_tit">데이터 수집 현황</strong>
+                                <div class="btn_twin"><a href="#none">일별</a> <a href="#none">월별</a> </div>
+                            </div>
+                            <div class="card_body">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--//widget card-->
+                </div>
+                <div class="modal_footer">
+                    <a href="none" class="btn_white"></a>
+                    <a href="none" class="btn_blue"></a>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
 	</body>
 </html>
