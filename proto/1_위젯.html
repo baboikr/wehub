@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Wehub</title>
+<meta http-equiv="Cache-Control" content="No-Cache">
+<meta http-equiv="Pragma" content="No-Cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<!-- The Open Graph protocol -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<!-- //The Open Graph protocol -->
+<link rel="SHORTCUT ICON" href="../img/favicon.ico">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/content.css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>	
+	<body>
+        <div class="content">
+            <!--title-->
+            <div class="tit_wrap">
+                <h3 class="tit_h3">펌뱅킹정보관리</h3>
+                <div class="right">
+                    <a href="#none" class="btn_blue_s"><img src="../img/ico/ico_edit.png" alt="">위젯설정</a>
+                </div>
+            </div>
+            <!--//title-->
+
+            <!--widget wrap-->
+            <div class="widget_wrap">
+                <div class="card straight">
+                    <div class="card_head bg_9509f7"><strong class="card_tit">금융자산현황</strong></div>
+                    <div class="card_body">
+                        <ul class="financial_asset_list">
+                            <li>
+                                <div class="asset">
+                                    <div class="asset_name">
+                                        <strong class="c_4d75f6">
+                                            수시입출(원화)입니다<br>
+                                            두줄일 경우
+                                        </strong>
+                                        <span>12</span>
+                                    </div>
+                                    <div class="balance">
+                                        <strong>전체잔액</strong>
+                                        <p><span class="currency">KRW</span><span class="amount">10,234,567,890</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="asset">
+                                    <div class="asset_name">
+                                        <strong class="c_c275ff">수시입출(외화)</strong><span>12</span>
+                                    </div>
+                                    <div class="balance">
+                                        <strong>전체잔액</strong>
+                                        <p><span class="currency">USD</span><span class="amount">10,234,567,890</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="asset">
+                                    <div class="asset_name">
+                                        <strong class="c_ef64fb">예적금</strong><span>6</span>
+                                    </div>
+                                    <div class="balance">
+                                        <strong>전체잔액</strong>
+                                        <p><span class="currency">KRW</span><span class="amount">5,000,000,000</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="asset">
+                                    <div class="asset_name">
+                                        <strong class="c_5552cc">증권</strong><span>2</span>
+                                    </div>
+                                    <div class="balance">
+                                        <strong>전체잔액</strong>
+                                        <p><span class="currency">KRW</span><span class="amount">3,000,000</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card_foot"><a href="#none" class="shortcut">바로가기</a></div>
+                </div>
+            </div>
+            <!--//widget wrap-->
+
+            <!--widget wrap-->
+            <div class="widget_wrap mgt32">
+                <div class="card">
+                    <div class="card_head bg_f79009"><strong class="card_tit">스케줄 실행 상태</strong></div>
+                    <div class="card_body">
+                        <div class="state error">
+                            <img src="../img/ico/ico_error.png" alt="">
+                            <strong>오류</strong>
+                            <p>스케줄 실행상태를 확인하세요!</p>
+                        </div>
+                    </div>
+                    <div class="card_foot"><a href="#none" class="shortcut">바로가기</a></div>
+                </div>
+                <div class="card">
+                    <div class="card_head bg_273ab5"><strong class="card_tit">금융기관 개시 상태</strong></div>
+                    <div class="card_body">
+                        <div class="state normall">
+                            <img src="../img/ico/ico_normall.png" alt="">
+                            <strong>정상</strong>
+                            <p>개시정보 상태가 정상입니다.</p>
+                        </div>
+                    </div>
+                    <div class="card_foot"><a href="#none" class="shortcut">바로가기</a></div>
+                </div>
+            </div>
+             <!--//widget wrap-->
+
+             <!--widget wrap-->
+             <div class="widget_wrap mgt32">
+                <div class="card straight">
+                    <div class="card_head bg_00c0cd">
+                        <strong class="card_tit">데이터 수집 현황</strong>
+                        <div class="btn_twin"><a href="#none" class="on">일별</a><a href="#none">월별</a></div>
+                    </div>
+                    <div class="card_body tac" style="padding: 102px 24px 46px;">
+                        <img src="../img/comm/im_temp_graph.png" alt="" style="width:100%;max-width: 1540px;">
+                    </div>
+                </div>
+            </div>
+            <!--//widget wrap-->
+        </div>
+        <!--popup-->
+        <div class="popup_wrap" style="display: none;">
+            <div class="modal">
+                <div class="modal_head"><strong>위젯 설정</strong><a href="none" class="pop_close"><span class="blind">close</span></a></div>
+                <div class="modal_body">
+                    <!--widget wrap-->
+                    <div class="widget_wrap edit">
+                        <div class="card straight">
+                            <div class="card_head">
+                                <label><input type="checkbox"><i></i></label>
+                                <strong class="card_tit">금융자산현황</strong>
+                            </div>
+                            <div class="card_body">
+                                <ul class="financial_asset_list">
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong class="c_4d75f6">
+                                                    수시입출(원화)입니다<br>
+                                                    두줄일 경우
+                                                </strong>
+                                                <span>12</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency">KRW</span><span class="amount">10,234,567,890</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong class="c_c275ff">수시입출(외화)</strong><span>12</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency">USD</span><span class="amount">10,234,567,890</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong class="c_ef64fb">예적금</strong><span>6</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency">KRW</span><span class="amount">5,000,000,000</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong class="c_5552cc">증권</strong><span>2</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency">KRW</span><span class="amount">3,000,000</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//widget wrap-->
+
+                    <!--widget wrap-->
+                    <div class="widget_wrap edit mgt32">
+                        <div class="card">
+                            <div class="card_head">
+                                <label><input type="checkbox"><i></i></label>
+                                <strong class="card_tit">스케줄 실행 상태</strong><span class="label">사용중</span>
+                            </div>
+                            <div class="card_body">
+                                <div class="state error">
+                                    <img src="../img/ico/ico_error.png" alt="">
+                                    <strong>오류</strong>
+                                    <p>스케줄 실행상태를 확인하세요!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_head">
+                                <label><input type="checkbox"><i></i></label>
+                                <strong class="card_tit">금융기관 개시 상태</strong>
+                            </div>
+                            <div class="card_body">
+                                <div class="state normall">
+                                    <img src="../img/ico/ico_normall.png" alt="">
+                                    <strong>정상</strong>
+                                    <p>개시정보 상태가 정상입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//widget wrap-->
+
+                    <!--widget wrap-->
+                    <div class="widget_wrap edit mgt32">
+                        <div class="card">
+                            <div class="card_head">
+                                <label><input type="checkbox"><i></i></label>
+                                <strong class="card_tit">스케줄 실행 상태</strong>
+                            </div>
+                            <div class="card_body">
+                                <div class="state error">
+                                    <img src="../img/ico/ico_error.png" alt="">
+                                    <strong>오류</strong>
+                                    <p>스케줄 실행상태를 확인하세요!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_head">
+                                <label><input type="checkbox"><i></i></label>
+                                <strong class="card_tit">스케줄 실행 상태</strong>
+                            </div>
+                            <div class="card_body">
+                                <div class="state error">
+                                    <img src="../img/ico/ico_error.png" alt="">
+                                    <strong>오류</strong>
+                                    <p>스케줄 실행상태를 확인하세요!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//widget wrap-->
+
+                     <!--widget wrap-->
+                     <div class="widget_wrap edit">
+                        <div class="card straight mgt32">
+                            <div class="card_head">
+                                <label><input type="checkbox"><i></i></label>
+                                <strong class="card_tit">금융자산현황</strong>
+                            </div>
+                            <div class="card_body">
+                                <ul class="financial_asset_list">
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong class="c_4d75f6">
+                                                    수시입출(원화)입니다<br>
+                                                    두줄일 경우
+                                                </strong>
+                                                <span>12</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency">KRW</span><span class="amount">10,234,567,890</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong class="c_c275ff">수시입출(외화)</strong><span>12</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency">USD</span><span class="amount">10,234,567,890</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong class="c_ef64fb">예적금</strong><span>6</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency">KRW</span><span class="amount">5,000,000,000</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="asset">
+                                            <div class="asset_name">
+                                                <strong class="c_5552cc">증권</strong><span>2</span>
+                                            </div>
+                                            <div class="balance">
+                                                <strong>전체잔액</strong>
+                                                <p><span class="currency">KRW</span><span class="amount">3,000,000</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//widget wrap-->
+
+                    <!--widget wrap-->
+                    <div class="widget_wrap edit mgt32">
+                        <div class="card">
+                            <div class="card_head">
+                                <label><input type="checkbox"><i></i></label>
+                                <strong class="card_tit">스케줄 실행 상태</strong><span class="label">사용중</span>
+                            </div>
+                            <div class="card_body">
+                                <div class="state error">
+                                    <img src="../img/ico/ico_error.png" alt="">
+                                    <strong>오류</strong>
+                                    <p>스케줄 실행상태를 확인하세요!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_head">
+                                <label><input type="checkbox"><i></i></label>
+                                <strong class="card_tit">금융기관 개시 상태</strong>
+                            </div>
+                            <div class="card_body">
+                                <div class="state normall">
+                                    <img src="../img/ico/ico_normall.png" alt="">
+                                    <strong>정상</strong>
+                                    <p>개시정보 상태가 정상입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//widget wrap-->
+
+                    <!--widget wrap-->
+                    <div class="widget_wrap edit mgt32">
+                        <div class="card">
+                            <div class="card_head">
+                                <label><input type="checkbox"><i></i></label>
+                                <strong class="card_tit">스케줄 실행 상태</strong>
+                            </div>
+                            <div class="card_body">
+                                <div class="state error">
+                                    <img src="../img/ico/ico_error.png" alt="">
+                                    <strong>오류</strong>
+                                    <p>스케줄 실행상태를 확인하세요!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_head">
+                                <label><input type="checkbox"><i></i></label>
+                                <strong class="card_tit">스케줄 실행 상태</strong>
+                            </div>
+                            <div class="card_body">
+                                <div class="state error">
+                                    <img src="../img/ico/ico_error.png" alt="">
+                                    <strong>오류</strong>
+                                    <p>스케줄 실행상태를 확인하세요!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//widget wrap-->
+                </div>
+                <div class="modal_foot">
+                    <a href="none" class="btn_white_s">취소</a>
+                    <a href="none" class="btn_blue_s">저장</a>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+	</body>
+</html>
