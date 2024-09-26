@@ -25,7 +25,7 @@
 	<body>
         <div class="content with_aside">
             <!--aside-->
-            <div class="aside mgt15">
+            <div class="aside mgt15" style="display: none;"><!--toggle display-->
                 <div class="aside_head">
                     <a href="#none" class="btn_close"><span class="blind">close</span></a>
                     <strong>필터</strong>
@@ -62,7 +62,13 @@
                     <h3 class="tit_h3">인증서관리</h3>
                     <div class="right">
                         <a href="#none" class="action"><img src="../img/ico/ico_filter.png" alt=""><span>필터</span></a>
-                        <a href="#none" class="btn_blue_s"><img src="../img/ico/ico_add.png" alt="">등록</a>
+                        <a href="#none" class="btn_blue_s"><img src="../img/ico/ico_add.png" alt="">등록<img src="../img/ico/ico_drp_02.png" alt="" class="r"></a>
+                        <div class="drop_list" style="display: none;"><!--toggle display-->
+                            <ul>
+                                <li><a href="#none">일괄등록</a></li>
+                                <li><a href="#none">일괄변경</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <!--//title-->
@@ -96,6 +102,28 @@
                                     <th><div></div></th>
                                 </tr>
                             </thead>
+                            <tfoot style="display: none;">
+                                <tr>
+                                    <td colspan="7"><div><span>내용이 존재하지 않습니다.</span></div></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!--//tbl_list_01-->
+
+                    <!--tbl_list_01-->
+                    <div class="tbl_list_01 scroll_y">
+                        <table summary="">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:68px;">
+                                <col style="width:177px;">
+                                <col style="width:130px;">
+                                <col style="width:107px;">
+                                <col style="width:412px;">
+                                <col style="width:138px;">
+                                <col style="width:;">
+                            </colgroup>
                             <tbody>
                                 <tr>
                                     <td><div class="tac"><label><input type="checkbox"></label></div></td>
@@ -170,16 +198,12 @@
                                     <td><div class="tar"><a href="#none" class="edit"><img src="" alt=""></a></div></td>
                                 </tr>
                             </tbody>
-                            <tfoot style="display: none;">
-                                <tr>
-                                    <td colspan="7"><div><span>내용이 존재하지 않습니다.</span></div></td>
-                                </tr>
-                            </tfoot>
                         </table>
+                        <!-- foot_bar -->
                         <div class="foot_bar">
                             <div class="limit">
                                 <span>Rows per page :</span>
-                                <a href="#none">10</a>
+                                <a href="#none" class="on">10</a>
                                 <ul>
                                     <li><a href="#none">10</a></li>
                                     <li><a href="#none">20</a></li>
@@ -190,22 +214,24 @@
                             </div>
                             <div class="current"><span>1-10 of 100</span></div>
                         </div>
-                        <div class="action_bar">
+                        <div class="snackbar">
                             <span class="amount"><strong>N</strong>건 선택</span>
-                            <a href="#none" class="del"><img src="" alt=""><span>삭제</span></a>
+                            <a href="#none" class="del"><img src="../img/ico/ico_del.png" alt=""><span>삭제</span></a>
                             <a href="#none" class="close"><span class="blind">close</span></a>
                         </div>
+                        <!-- //foot_bar -->
                     </div>
                     <!--//tbl_list_01-->
+                    
                 </div>
                 <!--//content_body-->
                 
             </div>
             <!--//content_sub-->
         </div>
-        
+
         <!--popup_02-->
-        <div class="popup_wrap_02" style="display: none;">
+        <div class="popup_wrap_02" style="display:;">
             <div class="modal">
                 <div class="modal_head">
                     <strong>인증서 일괄등록</strong><a href="#none" class="btn_pop_close"><span class="blind">close</span></a>
@@ -214,7 +240,15 @@
                     <!--tbl_input-->
                     <div class="tbl_input">
                         <div class="row">
-                            <div class="th required">회사명</div>
+                            <div class="th required"><strong>회사명</strong></div>
+                            <div class="td">
+                                <div class="input_text">
+                                    <input type="text" value="웹케시">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="th required"><strong>회사명</strong></div>
                             <div class="td">
                                 <div class="select_box">
                                     <a href="#none">선택</a>
@@ -229,7 +263,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="th required">금융기관 선택</div>
+                            <div class="th required"><strong>금융기관 선택</strong></div>
                             <div class="td">
                                 <div class="radio_box">
                                     <label><input type="radio">은행</label>
@@ -237,7 +271,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row span_all">
+                        <div class="row">
                             <div class="org_list">
                                 <p>복수 선택 가능</p>
                                 <ul>
@@ -293,7 +327,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="th required">인증서 선택</div>
+                            <div class="th required"><strong>인증서 선택</strong></div>
                             <div class="td">
                                 <div class="select_box">
                                     <a href="#none">선택</a>
@@ -308,7 +342,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="th required">인증서 비밀번호</div>
+                            <div class="th required"><strong>인증서 비밀번호</strong></div>
                             <div class="td">
                                 <div class="input">
                                     <input type="text">
@@ -318,9 +352,12 @@
                     </div>
                     <!--//tbl_input-->
                 </div>
-                <div class="btn_wrap">
-                    <a href="#none">등록</a>
+                <div class="modal_foot">
+                    <div class="btn_wrap">
+                        <a href="#none" class="btn_blue straight">등록</a>
+                    </div>
                 </div>
+                
             </div>
         </div>
         <!--//popup_02-->
@@ -331,9 +368,13 @@
                 <div class="modal_head">
                     <strong>인증서 수정</strong><a href="#none" class="btn_pop_close"><span class="blind">close</span></a>
                 </div>
-                <div class="modal_body"></div>
-                <div class="btn_wrap">
-                    <a href="#none">저장</a>
+                <div class="modal_body">
+
+                </div>
+                <div class="modal_foot">
+                    <div class="btn_wrap">
+                        <a href="#none" class="btn_blue straight">저장</a>
+                    </div>
                 </div>
             </div>
         </div>
