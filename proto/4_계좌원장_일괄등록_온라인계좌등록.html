@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Wehub</title>
+<meta http-equiv="Cache-Control" content="No-Cache">
+<meta http-equiv="Pragma" content="No-Cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<!-- The Open Graph protocol -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<!-- //The Open Graph protocol -->
+<link rel="SHORTCUT ICON" href="../img/favicon.ico">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/content.css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>	
+	<body>
+        <div class="content with_aside">
+            <!--aside-->
+            <div class="aside mgt15" style="display: none;"><!--toggle display-->
+                <div class="aside_head">
+                    <a href="#none" class="btn_close"><span class="blind">close</span></a>
+                    <strong>필터</strong>
+                    <a href="#none" class="action"><img src="../img/ico/ico_reset.png" alt="">초기화</a>
+                </div>
+                <div class="aside_body">
+                    <dl class="filter_list">
+                        <dt>
+                            <strong>설정</strong>
+                            <label class="mgt24"><input type="checkbox"><span class="switch"></span><strong>만기인증서 포함</strong></label>
+                        </dt>
+                        <dd class="mgt42">
+                            <strong>보기설정</strong>
+                            <div class="mgt20">
+                                <label><input type="checkbox" checked><span>회사명</span></label>
+                                <label><input type="checkbox" checked><span>금융기관</span></label>
+                                <label><input type="checkbox"><span>뱅킹유형</span></label>
+                                <label><input type="checkbox"><span>인증서명</span></label>
+                                <label><input type="checkbox"><span>인증서만료일자</span></label>
+                                <label><input type="checkbox"><span>메모</span></label>
+                                <label><input type="checkbox"><span>메모</span></label>
+                                <label><input type="checkbox"><span>메모</span></label>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!--//aside-->
+
+            <!--content_sub-->
+            <div class="content_sub">
+                <!--title-->
+                <div class="tit_wrap">
+                    <h3 class="tit_h3">계좌원장관리</h3>
+                    <div class="right">
+                        <a href="#none" class="action"><img src="../img/ico/ico_filter.png" alt=""><span>필터</span></a>
+                        <a href="#none" class="btn_blue_s"><img src="../img/ico/ico_add.png" alt="">등록<img src="../img/ico/ico_drp_02.png" alt="" class="r"></a>
+                        <div class="drop_list" style="display:;"><!--toggle display-->
+                            <ul>
+                                <li><a href="#none">단건등록</a></li>
+                                <li><a href="#none">엑셀 일괄 등록</a></li>
+                                <li><a href="#none">온라인 계좌등록</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--//title-->
+
+                <!--content_body-->
+                <div class="content_body">
+                    <!--tbl_list_01-->
+                    <div class="tbl_list_01">
+                        <div class="search_bar">
+                            <label><input type="text" placeholder="회사명, 금융기관"></label>
+                        </div>
+                        <table summary="">
+                            <caption></caption>
+                            <colgroup>
+								<col style="width:68px;">
+								<col style="width:177px;">
+								<col style="width:130px;">
+								<col style="width:107px;">
+								<col style="width:177px;">
+								<col style="width:130px;">
+								<col style="width:119px;">
+								<col style="width:107px;">
+								<col style="width:107px;">
+								<col>
+							</colgroup>
+                            <thead>
+                                <tr>
+                                    <th><div class="tac"><label><input type="checkbox"></label></div></th>
+                                    <th><div><span>회사명</span></div></th>
+                                    <th><div><span>금융기관</span></div></th>
+                                    <th><div><span>뱅킹유형</span></div></th>
+                                    <th><div><span>계좌번호</span></div></th>
+                                    <th><div><span>계좌별칭</span></div></th>
+                                    <th><div><span>계좌종류</span></div></th>
+                                    <th><div><span>통화</span></div></th>
+                                    <th><div><span>계좌상태</span></div></th>
+                                    <th><div></div></th>
+                                </tr>
+                            </thead>
+                            <tfoot style="display: none;">
+                                <tr>
+                                    <td colspan="10"><div><span>내용이 존재하지 않습니다.</span></div></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!--//tbl_list_01-->
+
+                    <!--tbl_list_01-->
+                    <div class="tbl_list_01 scroll_y">
+                        <table summary="">
+                            <caption></caption>
+                            <colgroup>
+								<col style="width:68px;">
+								<col style="width:177px;">
+								<col style="width:130px;">
+								<col style="width:107px;">
+								<col style="width:177px;">
+								<col style="width:130px;">
+								<col style="width:119px;">
+								<col style="width:107px;">
+								<col style="width:107px;">
+								<col>
+							</colgroup>
+                            <tbody>
+                                <tr>
+                                    <td><div class="tac"><label><input type="checkbox"></label></div></td>
+                                    <td><div><span>가나다라마가나다라마가나다라마</span></div></td>
+                                    <td><div><span>가나다라마가나다라</span></div></td>
+                                    <td><div><span>가나다라</span></div></td>
+                                    <td><div><span>214-86-35111</span></div></td>
+                                    <td><div><span>가나다라마가나다라</span></div></td>
+                                    <td><div><span>가나다라마</span></div></td>
+                                    <td><div><span>KRW</span></div></td>
+                                    <td><div><span>가나다라</span></div></td>
+                                    <td><div class="tar"><a href="#none" class="edit"><img src="" alt=""></a></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="tac"><label><input type="checkbox"></label></div></td>
+                                    <td><div><span>웹케시</span></div></td>
+                                    <td><div><span>국민은행</span></div></td>
+                                    <td><div><span>기업뱅킹</span></div></td>
+                                    <td><div><span>312-123-12432</span></div></td>
+                                    <td><div><span>OO수납계좌</span></div></td>
+                                    <td><div><span>예적금</span></div></td>
+                                    <td><div><span>KRW</span></div></td>
+                                    <td><div><span>거래중</span></div></td>
+                                    <td><div class="tar"><a href="#none" class="edit"><img src="" alt=""></a></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- foot_bar -->
+                        <div class="foot_bar">
+                            <div class="limit">
+                                <span>Rows per page :</span>
+                                <a href="#none" class="on">10</a>
+                                <ul>
+                                    <li><a href="#none">10</a></li>
+                                    <li><a href="#none">20</a></li>
+                                    <li><a href="#none">30</a></li>
+                                    <li><a href="#none">40</a></li>
+                                    <li><a href="#none">50</a></li>
+                                </ul>
+                            </div>
+                            <div class="current"><span>1-10 of 100</span></div>
+                        </div>
+                        <div class="snackbar">
+                            <span class="amount"><strong>N</strong>건 선택</span>
+                            <a href="#none" class="del"><img src="../img/ico/ico_del.png" alt=""><span>삭제</span></a>
+                            <a href="#none" class="close"><span class="blind">close</span></a>
+                        </div>
+                        <!-- //foot_bar -->
+                    </div>
+                    <!--//tbl_list_01-->
+                    
+                </div>
+                <!--//content_body-->
+                
+            </div>
+            <!--//content_sub-->
+        </div>
+
+        <!--popup_02-->
+        <div class="popup_wrap_02" style="display:;">
+            <div class="modal">
+                <div class="modal_head">
+                    <strong>계좌등록</strong><a href="#none" class="btn_pop_close"><span class="blind">close</span></a>
+                </div>
+                <div class="modal_body">
+                    <!--tbl_input-->
+                    <div class="tbl_input">
+                        <div class="row">
+                            <div class="th required"><strong>회사명</strong></div>
+                            <div class="td">
+                                <div class="input select_box">
+                                    <a href="#none" class=""><span class="placeholder">선택하세요</span></a><!--toggle class 'on' on <a> to toggle list / remove class 'placeholder' on <span> when option is selected-->
+                                    <div class="drop_list">
+                                        <ul>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="th required"><strong>금융기관</strong></div>
+                            <div class="td">
+                                <div class="input select_box">
+                                    <a href="#none" class=""><span class="placeholder">선택하세요</span></a><!--toggle class 'on' on <a> to toggle list / remove class 'placeholder' on <span> when option is selected-->
+                                    <div class="drop_list">
+                                        <ul>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="input select_box mgt8">
+                                    <a href="#none" class=""><span class="placeholder">선택하세요</span></a><!--toggle class 'on' on <a> to toggle list / remove class 'placeholder' on <span> when option is selected-->
+                                    <div class="drop_list">
+                                        <ul>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="th required"><strong>계좌번호</strong></div>
+                            <div class="td">
+                                <div class="input">
+									<input type="text" placeholder="입력하세요">
+								</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="th required"><strong>계좌종류</strong></div>
+                            <div class="td">
+                                <div class="input select_box">
+                                    <a href="#none" class=""><span class="placeholder">선택하세요</span></a><!--toggle class 'on' on <a> to toggle list / remove class 'placeholder' on <span> when option is selected-->
+                                    <div class="drop_list">
+                                        <ul>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="input select_box mgt8">
+                                    <a href="#none" class=""><span class="placeholder">선택하세요</span></a><!--toggle class 'on' on <a> to toggle list / remove class 'placeholder' on <span> when option is selected-->
+                                    <div class="drop_list">
+                                        <ul>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                        </ul>
+                                    </div>
+								</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="th required"><strong>비밀번호</strong></div>
+                            <div class="td flex">
+                                <div class="input">
+                                    <input type="text" placeholder="계과 비밀번호">
+                                </div>
+								<div class="input">
+                                    <input type="text" placeholder="비밀번호 확인">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="th required"><strong>계좌별칭</strong></div>
+                            <div class="td">
+                                <div class="input">
+                                    <input type="text" placeholder="입력하세요">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="th required"><strong>조회방식</strong></div>
+							<div class="td">
+                                <div class="input select_box">
+                                    <a href="#none" class=""><span class="placeholder">선택하세요</span></a><!--toggle class 'on' on <a> to toggle list / remove class 'placeholder' on <span> when option is selected-->
+                                    <div class="drop_list">
+                                        <ul>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//tbl_input-->
+                </div>
+                <div class="modal_foot">
+                    <div class="btn_wrap">
+                        <a href="#none" class="btn_blue straight">등록</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--//popup_02-->
+	</body>
+</html>
