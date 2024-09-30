@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Wehub</title>
+<meta http-equiv="Cache-Control" content="No-Cache">
+<meta http-equiv="Pragma" content="No-Cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no">
+<!-- The Open Graph protocol -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<!-- //The Open Graph protocol -->
+<link rel="SHORTCUT ICON" href="../img/favicon.ico">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/content.css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>	
+	<body>
+		<!--nav_top-->
+		<div class="nav_top pdb24 pdr24 pdl24">
+			<div class="left">
+				<a href="#none" class="link"><img src="../img/ico/ico_back.png" alt=""><span>뒤로가기</span></a>
+			</div>
+		</div>
+		<!--//nav_top-->
+
+        <!--content-->
+        <div class="content">
+            <!--aside-->
+            <div class="aside mgt15" style="display: ;"><!--toggle display-->
+                <div class="aside_head">
+                    <a href="#none" class="btn_switch"><span class="blind">close</span></a>
+                    <strong>거래내역 정보</strong>
+                    <a href="#none" class="action"><img src="../img/ico/ico_reset.png" alt="">초기화</a>
+                </div>
+                <div class="aside_body">
+                    <dl class="filter_list">
+                        <dt class="">
+                            <div><strong>회사명</strong></div>
+                        </dt>
+						<dd>
+							<p>웹케시</p>
+						</dd>
+                        <dt class="mgt24">
+                            <div><strong>금융기관</strong></div>
+                        </dt>
+						<dd>
+							<p>국민은행</p>
+						</dd>
+                        <dt class="mgt24">
+                            <div><strong>계좌번호</strong></div>
+                        </dt>
+						<dd>
+							<p>214-86-35100</p>
+						</dd>
+                        <dt>
+                            <div><strong>조회날짜</strong></div>
+                        </dt>
+                        <dd class="mgt7">
+                            <div class="">
+                                <div class="input_date">
+                                    <label><span>시작일</span><input type="text" placeholder="YYYY-MM-DD" value="2024-10-01"></label>
+                                    <a href="#none"><img src="../img/ico/ico_calendar.png" alt=""></a>
+                                </div>
+                                <div class="input_date class mgt8">
+                                    <label><span>종료일</span><input type="text" placeholder="YYYY-MM-DD"></label>
+                                    <a href="#none"><img src="../img/ico/ico_calendar.png" alt=""></a>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!--//aside-->
+
+            <!--content_sub-->
+            <div class="content_sub">
+                <!--title-->
+                <div class="tit_wrap">
+                    <h3 class="tit_h3">수시입출(원화)</h3>
+                    <div class="right">
+                        <a href="#none" class="action"><img src="../img/ico/ico_filter.png" alt=""><span>필터</span></a>
+                        <a href="#none" class="btn_blue_s">최신정보조회</a>
+                    </div>
+                </div>
+                <!--//title-->
+
+                <!--content_body-->
+                <div class="content_body">
+                    <!--tab_bar-->
+                    <div class="tab_bar">
+                        <ul>
+                            <li class="on"><a href="#none">계좌정보</a></li>
+                            <li><a href="#none">거래내역</a></li>
+                        </ul>
+                    </div>
+                    <!--//tab_bar-->
+
+                    <!--tbl_list_01-->
+                    <div class="tbl_list_01">
+                        <div class="search_bar">
+                            <label><input type="text" placeholder="회사명, 금융기관"></label>
+                        </div>
+                        <table summary="">
+                            <caption></caption>
+                            <colgroup>
+								<col style="width:183px;">
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col"><div><span>거래일시</span></div></th>
+                                    <th scope="col"><div><span>입금액</span></div></th>
+                                    <th scope="col"><div><span>출금액</span></div></th>
+                                    <th scope="col"><div><span>잔액</span></div></th>
+                                    <th scope="col"><div><span>적요</span></div></th>
+                                    <th scope="col"><div><span>비고</span></div></th>
+                                </tr>
+                            </thead>
+                            <tfoot style="display: none;">
+                                <tr>
+                                    <td colspan="7"><div><span>내용이 존재하지 않습니다.</span></div></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!--//tbl_list_01-->
+
+                    <!--tbl_list_01-->
+                    <div class="tbl_list_01 scroll_y">
+                        <table summary="">
+                            <caption></caption>
+                            <colgroup>
+								<col style="width:183px;">
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+                            <tbody>
+                                <tr>
+                                    <td><div><span>202-04-04 18:00:00</span></div></td>
+                                    <td><div><span>100,000</span></div></td>
+                                    <td><div><span>12,345,678</span></div></td>
+                                    <td><div><span>12,312,345,678</span></div></td>
+                                    <td><div><span>수수료 정산</span></div></td>
+                                    <td><div><span></span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div><span>202-04-04 18:00:00</span></div></td>
+                                    <td><div><span>0</span></div></td>
+                                    <td><div><span>5,038,256</span></div></td>
+                                    <td><div><span>5,038,256</span></div></td>
+                                    <td><div><span>거래처 정산</span></div></td>
+                                    <td><div><span></span></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- foot_bar -->
+                        <div class="foot_bar" style="display: none;">
+                            <div class="limit">
+                                <span>Rows per page :</span>
+                                <a href="#none" class="on">10</a>
+                                <ul>
+                                    <li><a href="#none">10</a></li>
+                                    <li><a href="#none">20</a></li>
+                                    <li><a href="#none">30</a></li>
+                                    <li><a href="#none">40</a></li>
+                                    <li><a href="#none">50</a></li>
+                                </ul>
+                            </div>
+                            <div class="current"><span>1-10 of 100</span></div>
+                        </div>
+                        <div class="snackbar" style="display:none;">
+                            <span class="amount"><strong>N</strong>건 선택</span>
+                            <a href="#none" class="del"><img src="../img/ico/ico_del.png" alt=""><span>삭제</span></a>
+                            <a href="#none" class="close"><span class="blind">close</span></a>
+                        </div>
+                        <!-- //foot_bar -->
+                    </div>
+                    <!--//tbl_list_01-->
+                    
+                </div>
+                <!--//content_body-->
+                
+            </div>
+            <!--//content_sub-->
+        </div>
+        <!--//content-->
+
+        <!--popup_02-->
+        <div class="popup_wrap_02" style="display:none;">
+            <div class="modal">
+                <div class="modal_head">
+                    <strong>최신정보조회</strong><a href="#none" class="btn_pop_close"><span class="blind">close</span></a>
+                </div>
+                <div class="modal_body">
+                    <!--tbl_input-->
+                    <div class="tbl_input">
+                        <div class="row">
+                            <div class="th required"><strong>조회유형</strong></div>
+                            <div class="td">
+                                <div class="input select_box">
+                                    <a href="#none" class=""><span class="placeholder">선택</span></a><!--toggle class 'on' on <a> to toggle list / remove class 'placeholder' on <span> when option is selected-->
+                                    <div class="drop_list">
+                                        <ul>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="th required"><strong>조회유형</strong></div>
+                            <div class="td">
+                                <div class="input select_box">
+                                    <a href="#none" class=""><span class="placeholder">선택</span></a><!--toggle class 'on' on <a> to toggle list / remove class 'placeholder' on <span> when option is selected-->
+                                    <div class="drop_list">
+                                        <ul>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                            <li><a href="#none">선택01</a></li>
+                                            <li><a href="#none">선택02</a></li>
+                                            <li><a href="#none">선택03</a></li>
+                                            <li><a href="#none">선택04</a></li>
+                                            <li><a href="#none">선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05선택05</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+								<div class="duration mgt16">
+									<div class="input_date">
+										<label>
+											<span>시작일</span>
+											<input type="text" value="2022-10-01">
+										</label>
+										<a href="#none"><img src="../img/ico/ico_calendar.png" alt=""></a>
+									</div>
+									<span>~</span>
+									<div class="input_date">
+										<label>
+											<span>종료일</span>
+											<input type="text" value="2024-10-01">
+										</label>
+										<a href="#none"><img src="../img/ico/ico_calendar.png" alt=""></a>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//tbl_input-->
+                </div>
+                <div class="modal_foot">
+                    <div class="btn_wrap">
+                        <a href="#none" class="btn_blue straight">조회</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup_02-->
+	</body>
+</html>
