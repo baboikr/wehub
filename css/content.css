@@ -264,15 +264,16 @@ ul.financial_asset_list .asset .balance p span.amount{font-size: 20px;line-heigh
 /* aside */
 .aside{flex:none;display: flex;flex-flow: column;width:332px;background-color: #fff;border-radius: 20px;box-shadow: 0 1px 24px 0 rgba(62, 68, 73, 0.18);z-index: 30000;}
 .aside .aside_head{flex:none;position:relative;height:80px;display:flex;justify-content: space-between;align-items: center;padding:0 24px;}
-.aside .aside_head > strong{height:24px;font-size:18px;line-height:23px;color:#111927;}
+.aside .aside_head > strong{height:24px;font-size:18px;line-height:23px;color:#111927;letter-spacing:-2px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .aside .aside_head > a.action{height:24px;font-size:13px;line-height:22px;color:#111927;display: flex;align-items: center;}
 .aside .aside_head > a.action img{margin-right:7px;}
 .aside .aside_head > a.btn_close{position:absolute;top:50%;left:0;transform: translate(-50%,-50%);width:24px;height:24px;background: url(../img/ico/ico_x_03.png) 0 0 no-repeat;}
-.aside .aside_head > a.btn_switch{position:absolute;top:50%;left:0;transform: translate(-50%,-50%);width:24px;height:24px;background: url(../img/ico/ico_switch_back.png) 0 0 no-repeat;}
+.aside .aside_head > a.btn_switch{position:absolute;top:50%;left:0;transform: translate(-50%,-50%);width:24px;height:24px;background: url(../img/ico/ico_switch_back.png) 50% no-repeat;background-color: #fff;border:1px solid #cdcfd3;border-radius:50%;}
 
-.aside.collapse{width:110px;}
-.aside.collapse .aside_head .action{display:none;}
-.aside.collapse .aside_body{display: none;}
+.aside.shrink{width:110px;}
+.aside.shrink .aside_head > a.action{display: none;}
+.aside.shrink .aside_head > a.btn_switch{transform:translate(-50%,-50%) rotate(180deg);}
+.aside.shrink .aside_body{display: none;}
 
 
 .aside .aside_body{position:relative;flex:1;height:calc(100% - 80px);padding:0 24px;}
