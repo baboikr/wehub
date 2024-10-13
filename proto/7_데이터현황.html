@@ -34,64 +34,58 @@
 				<!--report_wrap-->
 				<div class="report_wrap">
 					<!--report_sum-->
-					<div class="report_sum">
+					<div class="report_sum extend"><!--[D] toggle class "extend"-->
 						<dl>
 							<dt>
 								<div>
 									<div class="date_month">
-										<a href="#none" class="pre"><span class="blind"></span></a>
+										<a href="#none" class="pre"><span class="blind">Previous</span></a>
 										<span>20224.03</span>
-										<a href="#none" class="pre"><span class="blind"></span></a>
+										<a href="#none" class="next"><span class="blind">Next</span></a>
 									</div>
 									<div class="tit"><strong>연동정보현황 (월)</strong></div>
 									<ul>
-										<li><span class="name">펌뱅킹</span><span class="amount"><strong>123,123,12</strong> 건</span></li>
-										<li><span class="name">스크래핑</span><span class="amount"><strong>2,612</strong> 건</span></li>
-										<li><span class="name">API</span><span class="amount"><strong>80</strong> 건</span></li>
+										<li class="banking"><span class="name">펌뱅킹</span><span class="amount"><strong>123,123,12</strong> 건</span></li>
+										<li class="scrapping"><span class="name">스크래핑</span><span class="amount"><strong>2,612</strong> 건</span></li>
+										<li class="api"><span class="name">API</span><span class="amount"><strong>80</strong> 건</span></li>
 									</ul>
 								</div>
 							</dt>
 							<dd>
 								<div>
-									<div class="tit"><strong>펌뱅킹</strong></div>
+									<div class="tit banking"><strong>펌뱅킹</strong></div>
 									<ul>
-										<li>
-											<li><span class="name">펌뱅킹</span><span class="amount"><strong>12</strong> 건</span></li>
-											<li><span class="name">일괄배치</span><span class="amount"><strong>312</strong> 건</span></li>
-											<li><span class="name">예금주조회</span><span class="amount"><strong>1,132</strong> 건</span></li>
-											<li><span class="name">잔액조회</span><span class="amount"><strong>12</strong> 건</span></li>
-											<li><span class="name">거래명세통지</span><span class="amount"><strong>312</strong> 건</span></li>
-											<li><span class="name">외화송금</span><span class="amount"><strong>1,132</strong> 건</span></li>
-											<li><span class="name">외상매츨채권</span><span class="amount"><strong>12</strong> 건</span></li>
-											<li><span class="name">가상계좌</span><span class="amount"><strong>312</strong> 건</span></li>
-										</li>
+										<li><span class="name">펌뱅킹</span><span class="amount"><strong>12</strong> 건</span></li>
+										<li><span class="name">일괄배치</span><span class="amount"><strong>312</strong> 건</span></li>
+										<li><span class="name">예금주조회</span><span class="amount"><strong>1,132</strong> 건</span></li>
+										<li><span class="name">잔액조회</span><span class="amount"><strong>12</strong> 건</span></li>
+										<li><span class="name">거래명세통지</span><span class="amount"><strong>312</strong> 건</span></li>
+										<li><span class="name">외화송금</span><span class="amount"><strong>1,132</strong> 건</span></li>
+										<li><span class="name">외상매츨채권</span><span class="amount"><strong>12</strong> 건</span></li>
+										<li><span class="name">가상계좌</span><span class="amount"><strong>312</strong> 건</span></li>
 									</ul>
-									<a href="#none" class="switcher">닫기</a>
+									<a href="#none" class="switcher"><span class="off">닫기</span><span>더보기</span></a>
 								</div>
 							</dd>
 							<dd>
 								<div>
-									<div class="tit"><strong>스크래핑</strong></div>
+									<div class="tit scrapping"><strong>스크래핑</strong></div>
 									<ul>
-										<li>
-											<li><span class="name">은행</span><span class="amount"><strong>12</strong> 건</span></li>
-											<li><span class="name">카드사</span><span class="amount"><strong>312</strong> 건</span></li>
-											<li><span class="name">증권사</span><span class="amount"><strong>1,132</strong> 건</span></li>
-											<li><span class="name">금결원</span><span class="amount"><strong>12</strong> 건</span></li>
-											<li><span class="name">내역1</span><span class="amount"><strong>1,132</strong> 건</span></li>
-											<li><span class="name">내역2</span><span class="amount"><strong>12</strong> 건</span></li>
-										</li>
+										<li><span class="name">은행</span><span class="amount"><strong>12</strong> 건</span></li>
+										<li><span class="name">카드사</span><span class="amount"><strong>312</strong> 건</span></li>
+										<li><span class="name">증권사</span><span class="amount"><strong>1,132</strong> 건</span></li>
+										<li><span class="name">금결원</span><span class="amount"><strong>12</strong> 건</span></li>
+										<li><span class="name">내역1</span><span class="amount"><strong>1,132</strong> 건</span></li>
+										<li><span class="name">내역2</span><span class="amount"><strong>12</strong> 건</span></li>
 									</ul>
-									<a href="#none" class="switcher">닫기</a>
+									<a href="#none" class="switcher"><span class="off">닫기</span><span>더보기</span></a>
 								</div>
 							</dd>
 							<dd>
 								<div>
-									<div class="tit"><strong>API</strong></div>
+									<div class="tit api"><strong>API</strong></div>
 									<ul>
-										<li>
-											<li><span class="name">API</span><span class="amount"><strong>80</strong> 건</span></li>
-										</li>
+										<li><span class="name">API</span><span class="amount"><strong>80</strong> 건</span></li>
 									</ul>
 								</div>
 							</dd>
@@ -100,152 +94,361 @@
 					<!--//report_sum-->
 
 					<!--calendar_view-->
-					<div class="calendar_view">
+					<div class="calendar_view mgt24">
 						<!--calender_head-->
 						<div class="calendar_head">
-							<div class="day_name sun"><span>SUN</span></div>
-							<div class="day_name"><span>MON</span></div>
-							<div class="day_name"><span>TUE</span></div>
-							<div class="day_name"><span>WED</span></div>
-							<div class="day_name"><span>THU</span></div>
-							<div class="day_name"><span>FRI</span></div>
-							<div class="day_name sat"><span>SAT</span></div>
+							<div class="day_name"><strong>SUN</strong></div>
+							<div class="day_name"><strong>MON</strong></div>
+							<div class="day_name"><strong>TUE</strong></div>
+							<div class="day_name"><strong>WED</strong></div>
+							<div class="day_name"><strong>THU</strong></div>
+							<div class="day_name"><strong>FRI</strong></div>
+							<div class="day_name"><strong>SAT</strong></div>
 						</div>
 						<!--//calender_head-->
 
 						<!--calendar_body-->
 						<div class="calendar_body">
-							<div class="day">
-								<div class="day_num"><span>25</span></div>
-							</div>
-							<div class="day">
-								<div class="day_num"><span>26</span></div>
-							</div>
-							<div class="day">
-								<div class="day_num"><span>27</span></div>
-							</div>
-							<div class="day">
-								<div class="day_num"><span>28</span></div>
-							</div>
-							<div class="day">
-								<div class="day_num"><span>29</span></div>
-							</div>
-							<div class="day">
-								<div class="day_num"><span>1</span></div>
-							</div>
-							<div class="day">
-								<div class="day_num"><span>2</span></div>
-								<div class="transaction">
-									<span>1,000</span>
-									<span>10,000</span>
-									<span>100</span>
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">25</strong>
 								</div>
 							</div>
-							<div class="day">
-								<div class="day_num"><span>3</span></div>
+							<!--//day-->
+
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">26</strong>
+								</div>
 							</div>
-							<div class="day">
-								<div class="day_num"><span>4</span></div>
+							<!--//day-->
+
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">27</strong>
+								</div>
 							</div>
-							<div class="day">
-								<div class="day_num"><span>5</span></div>
+							<!--//day-->
+
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">28</strong>
+								</div>
 							</div>
-							<div class="day">
-								<div class="day_num"><span>6</span></div>
+							<!--//day-->
+
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">29</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>7</span></div>
+								<div>
+									<strong class="day_num">1</strong>
+									<div class="transaction">
+										<span class="c_f04438">1,000</span>
+										<span class="c_2c56d0">10,000</span>
+										<span class="c_80ba72">1000</span>
+									</div>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>8</span></div>
+								<div>
+									<strong class="day_num">2</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>9</span></div>
+								<div>
+									<strong class="day_num">3</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>10</span></div>
+								<div>
+									<strong class="day_num">4</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>11</span></div>
+								<div>
+									<strong class="day_num">5</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>12</span></div>
+								<div>
+									<strong class="day_num">6</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>13</span></div>
+								<div>
+									<strong class="day_num">7</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>14</span></div>
+								<div>
+									<strong class="day_num">8</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>15</span></div>
+								<div>
+									<strong class="day_num">9</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>16</span></div>
+								<div>
+									<strong class="day_num">10</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>17</span></div>
+								<div>
+									<strong class="day_num">11</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>18</span></div>
+								<div>
+									<strong class="day_num">12</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>19</span></div>
+								<div>
+									<strong class="day_num">13</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>20</span></div>
+								<div>
+									<strong class="day_num">14</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>21</span></div>
+								<div>
+									<strong class="day_num">15</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>22</span></div>
+								<div>
+									<strong class="day_num">16</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>23</span></div>
+								<div>
+									<strong class="day_num">17</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>24</span></div>
+								<div>
+									<strong class="day_num">18</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>25</span></div>
+								<div>
+									<strong class="day_num">19</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>26</span></div>
+								<div>
+									<strong class="day_num">20</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>27</span></div>
+								<div>
+									<strong class="day_num">21</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>28</span></div>
+								<div>
+									<strong class="day_num">22</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>29</span></div>
+								<div>
+									<strong class="day_num">23</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>30</span></div>
+								<div>
+									<strong class="day_num">24</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>31</span></div>
+								<div>
+									<strong class="day_num">25</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>1</span></div>
+								<div>
+									<strong class="day_num">26</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>2</span></div>
+								<div>
+									<strong class="day_num">27</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>3</span></div>
+								<div>
+									<strong class="day_num">28</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>4</span></div>
+								<div>
+									<strong class="day_num">29</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>5</span></div>
+								<div>
+									<strong class="day_num">30</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
 							<div class="day">
-								<div class="day_num"><span>6</span></div>
+								<div>
+									<strong class="day_num">31</strong>
+								</div>
 							</div>
+							<!--//day-->
+
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">1</strong>
+								</div>
+							</div>
+							<!--//day-->
+
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">2</strong>
+								</div>
+							</div>
+							<!--//day-->
+
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">3</strong>
+								</div>
+							</div>
+							<!--//day-->
+
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">4</strong>
+								</div>
+							</div>
+							<!--//day-->
+
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">5</strong>
+								</div>
+							</div>
+							<!--//day-->
+
+							<!--day-->
+							<div class="day off">
+								<div>
+									<strong class="day_num">6</strong>
+								</div>
+							</div>
+							<!--//day-->
 						</div>
 						<!--//calendar_body-->
 					</div>
